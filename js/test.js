@@ -1,4 +1,4 @@
-unction permutation(arr) {
+function permutation(arr) {
   if (arr.length === 0) {
     return [[]];
   }
