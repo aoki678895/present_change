@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>プレゼント交換</title>
+  <script>
+
+　　//交換できるすべての組み合わせ
+    const list = [
+      ["B", "A", "D", "C"],
+      ["B", "C", "D", "A"],
+      ["B", "D", "A", "C"],
+      ["C", "A", "D", "B"],
+      ["C", "D", "A", "B"],
+      ["C", "D", "B", "A"],
+      ["D", "A", "B", "C"],
+      ["D", "C", "A", "B"],
+      ["D", "C", "B", "A"],
+    ];
+
+    // 今までに交換したことがある組合せ
+    const past_record = [
+      ["B", "A", "D", "C"],
+    ]
+
+    // ランダムに交換を行う
+    function exchange() {
+      var i = Math.floor(Math.random() * list.length);
+      document.getElementById("sample1").innerHTML = "Aさんは" + list[i][0] + "さんのプレゼントを受け取ります";
+      document.getElementById("sample2").innerHTML = "Bさんは" + list[i][1] + "さんのプレゼントを受け取ります";
+      document.getElementById("sample3").innerHTML = "Cさんは" + list[i][2] + "さんのプレゼントを受け取ります";
+      document.getElementById("sample4").innerHTML = "Dさんは" + list[i][3] + "さんのプレゼントを受け取ります";
+    }
+
+// タブがフォーカスされたときの処理
+function handleFocus() {
+  console.log('タブがフォーカスされました');
+}
+
+// タブが非アクティブになったときの処理
+function handleBlur() {
+  console.log('タブが非アクティブになりました');
+}
+
+// ページが読み込まれたときにイベントリスナーを追加
+window.addEventListener('focus', handleFocus);
+window.addEventListener('blur', handleBlur);
+
+
+  </script>
+</head>
+
+<body>
+
+  <p id="sample1">Aさんは</p>
+  <p id="sample2">Bさんは</p>
+  <p id="sample3">Cさんは</p>
+  <p id="sample4">Dさんは</p>
+  <button onClick="exchange()">交換する</button>
+
+</body>
+
+</html>
