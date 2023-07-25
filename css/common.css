@@ -1,0 +1,204 @@
+html, body {
+  width:99%;
+}
+
+body {
+  color:#606060;
+  text-align:center;
+}
+
+h1 {
+  text-align:center;
+  font-size:160%;
+  font-weight:bold;
+  color:darkslategray;
+}
+
+h3 {
+  font-size:120%;
+  font-weight:bold;
+  color:darkslategray;
+}
+
+header, footer {
+  width:850px;
+  margin-left:auto;
+  margin-right:auto;
+  clear:both;
+}
+
+article {
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  padding: 5px;
+  clear:both;
+}
+
+div#header, div#footer {
+  width:850px;
+}
+
+div#content {
+  width:800px;
+}
+
+div#header, div#footer, div#content {
+  margin-left:auto;
+  margin-right:auto;
+  clear:both;
+}
+
+div#header {
+  text-align:right;
+}
+
+div#content {
+  text-align:left;
+  padding: 5px;
+}
+
+div#footer {
+  text-align:left;
+  margin-top:20px;
+}
+
+div#pankuzu {
+  position:relative;
+  top:40px;
+  left:-90px;
+  font-size:80%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #406060;
+}
+
+a:visited {
+  color: #406060;
+}
+
+a:hover {
+  color: #ff61a4;
+}
+
+a img {
+  border-style: none;
+}
+
+a.def {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+dt.link {
+  font-size: 100%;
+  font-weight: bold;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 5px;
+}
+dd.link {
+  font-size: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 13px 20px;
+}
+
+dt.slink {
+  font-weight: bold;
+}
+dd.slink {
+  margin: 0px 0px 0px 20px;
+}
+dd.slink_bottom {
+  margin: 0px 0px 20px 20px;
+}
+
+div.strong {
+  font-size: 110%;
+  font-weight: bold;
+  color:darkslategray;
+}
+
+span.em1 {
+  color: black;
+}
+span.em2 {
+  color: black;
+  font-weight: bold;
+}
+span.em2gray {
+  color: gray;
+  font-weight: bold;
+}
+span.em3 {
+  color: darkblue;
+  font-weight: bold;
+}
+span.em3o {
+  color: orange;
+  font-weight: bold;
+}
+span.em3g {
+  color: #548B54;
+  font-weight: bold;
+}
+span.em4 {
+  font-size: 130%;
+  font-weight: bold;
+  color:#548B54;
+}
+span.em4db {
+  font-size: 130%;
+  font-weight: bold;
+  color:darkblue;
+}
+
+span.small1 {
+  font-size: 80%;
+}
+
+span.comment1 {
+  font-size: 90%;
+}
+
+div.blue_field {
+  border: 3px dotted #5D478B;
+  background-color: #FDFFFF;
+  padding: 5px 10px;
+  margin: 10px;
+  color: #4F4F4F;
+}
+
+div.dd {
+  font-size: 110%;
+  font-weight: bold;
+  color:#27408B;
+  margin:5px 0px;
+}
+
+div.dt {
+  margin-left: 15px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+input.ime_off {
+  ime-mode: disabled;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+strong {
+  font-weight: bold;
+  font-style: italic;
+}
